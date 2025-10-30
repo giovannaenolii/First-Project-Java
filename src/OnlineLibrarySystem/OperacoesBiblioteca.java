@@ -1,6 +1,6 @@
 package OnlineLibrarySystem;
 
-import java.util.List;
+import java.util.Optional;
 
 public interface OperacoesBiblioteca {
 
@@ -13,6 +13,6 @@ public interface OperacoesBiblioteca {
     void listarLivrosDisponiveis();
     void listarMmebros();
     void listarEmprestimosAtivos();
-    Livro buscarLivroPorIsbn(String isbn);
+    Optional<Livro> buscarLivroPorIsbn(String isbn);
     Membro buscarMmebroPorId(String idMmebro);
 }
